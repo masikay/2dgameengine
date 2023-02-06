@@ -1,4 +1,5 @@
-.vscode
 gameengine
-x64
 imgui*
+
+.vscode
+x64
