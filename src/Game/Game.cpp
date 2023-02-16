@@ -16,19 +16,11 @@
 #include "../Systems/RenderHealthBarSystem.h"
 #include "../Systems/RenderGuiSystem.h"
 #include "../Systems/ScriptSystem.h"
-#include <iostream>
-#include <glm/glm.hpp>
-#include <imgui/imgui.h>
-#include <imgui/imgui_impl_sdl.h>
-#include <imgui/imgui_impl_sdlrenderer.h>
-
-#if defined(WIN32) || defined(_WIN32) || defined(__WIN32)
-#include <SDL.h>
-#include <SDL_image.h>
-#else
+#include <imgui.h>
+#include <imgui_impl_sdl.h>
+#include <imgui_impl_sdlrenderer.h>
 #include <SDL2/SDL.h>
-#include <SDL2/SDL_image.h>
-#endif
+
 
 int Game::windowWidth;
 int Game::windowHeight;

@@ -4,13 +4,7 @@
 #include "../ECS/ECS.h"
 #include "../Components/TransformComponent.h"
 #include "../Components/BoxColliderComponent.h"
-#include <algorithm>
-
-#if defined(WIN32) || defined(_WIN32) || defined(__WIN32)
-#include <SDL.h>
-#else
 #include <SDL2/SDL.h>
-#endif
 
 class RenderCollisionSystem: public System
 {

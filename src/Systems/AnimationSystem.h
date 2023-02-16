@@ -4,12 +4,7 @@
 #include "../ECS/ECS.h"
 #include "../Components/AnimationComponent.h"
 #include "../Components/SpriteComponent.h"
-
-#if defined(WIN32) || defined(_WIN32) || defined(__WIN32)
-#include <SDL.h>
-#else
 #include <SDL2/SDL.h>
-#endif
 
 class AnimationSystem : public System
 {

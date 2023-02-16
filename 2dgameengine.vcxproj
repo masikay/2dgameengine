@@ -71,20 +71,20 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\paolo\scoop\apps\sdl2\current\include\SDL2;C:\Users\paolo\scoop\apps\sdl2-image\current\include\SDL2_image;C:\Users\paolo\scoop\apps\sdl2-mixer\current\include\SDL2_mixer;C:\Users\paolo\scoop\apps\sdl2-ttf\current\include\SDL2_ttf;C:\Users\paolo\source\repos\external\glm;C:\Users\paolo\scoop\apps\lua\current\include;C:\Users\paolo\source\repos\external\sol2\include;C:\Users\paolo\source\repos\2DGameEngine\2dgameengine\libs;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\paolo\scoop\apps\sdl2\current\lib;C:\Users\paolo\scoop\apps\sdl2-image\current\lib;C:\Users\paolo\scoop\apps\sdl2-mixer\current\lib;C:\Users\paolo\scoop\apps\sdl2-ttf\current\lib;C:\Users\paolo\scoop\apps\lua\current;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Tools\oss\vcpkg\installed\x64-windows\lib;C:\Tools\oss\vcpkg\installed\x64-windows\lib\manual-link;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>C:\Users\paolo\scoop\apps\sdl2\current\include\SDL2;C:\Users\paolo\scoop\apps\sdl2-image\current\include\SDL2_image;C:\Users\paolo\scoop\apps\sdl2-mixer\current\include\SDL2_mixer;C:\Users\paolo\scoop\apps\sdl2-ttf\current\include\SDL2_ttf;C:\Users\paolo\source\repos\external\glm;C:\Users\paolo\scoop\apps\lua\current\include;C:\Users\paolo\source\repos\external\sol2\include;C:\Users\paolo\source\repos\2DGameEngine\2dgameengine\libs;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\paolo\scoop\apps\sdl2\current\lib;C:\Users\paolo\scoop\apps\sdl2-image\current\lib;C:\Users\paolo\scoop\apps\sdl2-mixer\current\lib;C:\Users\paolo\scoop\apps\sdl2-ttf\current\lib;C:\Users\paolo\scoop\apps\lua\current;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Tools\oss\vcpkg\installed\x64-windows\lib;C:\Tools\oss\vcpkg\installed\x64-windows\lib\manual-link;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\paolo\scoop\apps\sdl2\current\include\SDL2;C:\Users\paolo\scoop\apps\sdl2-image\current\include\SDL2_image;C:\Users\paolo\scoop\apps\sdl2-mixer\current\include\SDL2_mixer;C:\Users\paolo\scoop\apps\sdl2-ttf\current\include\SDL2_ttf;C:\Users\paolo\source\repos\external\glm;C:\Users\paolo\scoop\apps\lua\current\include;C:\Users\paolo\source\repos\external\sol2\include;C:\Users\paolo\source\repos\2DGameEngine\2dgameengine\libs;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\paolo\scoop\apps\sdl2\current\lib;C:\Users\paolo\scoop\apps\sdl2-image\current\lib;C:\Users\paolo\scoop\apps\sdl2-mixer\current\lib;C:\Users\paolo\scoop\apps\sdl2-ttf\current\lib;C:\Users\paolo\scoop\apps\lua\current;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Tools\oss\vcpkg\installed\x64-windows\lib;C:\Tools\oss\vcpkg\installed\x64-windows\lib\manual-link;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>C:\Users\paolo\scoop\apps\sdl2\current\include\SDL2;C:\Users\paolo\scoop\apps\sdl2-image\current\include\SDL2_image;C:\Users\paolo\scoop\apps\sdl2-mixer\current\include\SDL2_mixer;C:\Users\paolo\scoop\apps\sdl2-ttf\current\include\SDL2_ttf;C:\Users\paolo\source\repos\external\glm;C:\Users\paolo\scoop\apps\lua\current\include;C:\Users\paolo\source\repos\external\sol2\include;C:\Users\paolo\source\repos\2DGameEngine\2dgameengine\libs;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\paolo\scoop\apps\sdl2\current\lib;C:\Users\paolo\scoop\apps\sdl2-image\current\lib;C:\Users\paolo\scoop\apps\sdl2-mixer\current\lib;C:\Users\paolo\scoop\apps\sdl2-ttf\current\lib;C:\Users\paolo\scoop\apps\lua\current;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Tools\oss\vcpkg\installed\x64-windows\lib;C:\Tools\oss\vcpkg\installed\x64-windows\lib\manual-link;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -97,7 +97,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;liblua54.a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;lua.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -115,7 +115,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;liblua54.a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;lua.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -129,7 +129,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;liblua54.a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;lua.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -147,21 +147,12 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;liblua54.a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;lua.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="src\Components\ScriptComponent.h" />
     <ClInclude Include="src\Game\LevelLoader.h" />
-    <ClInclude Include="libs\imgui\imconfig.h" />
-    <ClInclude Include="libs\imgui\imgui.h" />
-    <ClInclude Include="libs\imgui\imgui_impl_sdl.h" />
-    <ClInclude Include="libs\imgui\imgui_impl_sdlrenderer.h" />
-    <ClInclude Include="libs\imgui\imgui_internal.h" />
-    <ClInclude Include="libs\imgui\imgui_sdl.h" />
-    <ClInclude Include="libs\imgui\imstb_rectpack.h" />
-    <ClInclude Include="libs\imgui\imstb_textedit.h" />
-    <ClInclude Include="libs\imgui\imstb_truetype.h" />
     <ClInclude Include="src\AssetStore\AssetStore.h" />
     <ClInclude Include="src\Components\AnimationComponent.h" />
     <ClInclude Include="src\Components\BoxColliderComponent.h" />
@@ -198,14 +189,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Game\LevelLoader.cpp" />
-    <ClCompile Include="libs\imgui\imgui.cpp" />
-    <ClCompile Include="libs\imgui\imgui_demo.cpp" />
-    <ClCompile Include="libs\imgui\imgui_draw.cpp" />
-    <ClCompile Include="libs\imgui\imgui_impl_sdl.cpp" />
-    <ClCompile Include="libs\imgui\imgui_impl_sdlrenderer.cpp" />
-    <ClCompile Include="libs\imgui\imgui_sdl.cpp" />
-    <ClCompile Include="libs\imgui\imgui_tables.cpp" />
-    <ClCompile Include="libs\imgui\imgui_widgets.cpp" />
     <ClCompile Include="src\AssetStore\AssetStore.cpp" />
     <ClCompile Include="src\ECS\ECS.cpp" />
     <ClCompile Include="src\Game\Game.cpp" />

@@ -9,7 +9,6 @@
 #include "../Components/CameraFollowComponent.h"
 #include "../Components/ProjectileEmitterComponent.h"
 #include "../Components/HealthComponent.h"
-#include "../Components/TextLabelComponent.h"
 #include "../Components/ScriptComponent.h"
 #include <fstream>
 #include <string>

@@ -6,13 +6,7 @@
 #include "../Components/SpriteComponent.h"
 #include "../Components/HealthComponent.h"
 #include "../AssetStore/AssetStore.h"
-
-
-#if defined(WIN32) || defined(_WIN32) || defined(__WIN32)
-#include <SDL.h>
-#else
 #include <SDL2/SDL.h>
-#endif
 
 class RenderHealthBarSystem : public System
 {

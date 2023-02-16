@@ -1,11 +1,7 @@
 #ifndef PROJECTILE_COMPONENT_H
 #define PROJECTILE_COMPONENT_H
 
-#if defined(WIN32) || defined(_WIN32) || defined(__WIN32)
-#include <SDL.h>
-#else
 #include <SDL2/SDL.h>
-#endif
 
 struct ProjectileComponent
 {

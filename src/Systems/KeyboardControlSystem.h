@@ -7,13 +7,8 @@
 #include "../Components/KeyboardControlledComponent.h"
 #include "../Components/SpriteComponent.h"
 #include "../Components/RigidBodyComponent.h"
-#include "../Logger/Logger.h"
-
-#if defined(WIN32) || defined(_WIN32) || defined(__WIN32)
-#include <SDL.h>
-#else
 #include <SDL2/SDL.h>
-#endif
+
 
 class KeyboardControlSystem : public System
 {

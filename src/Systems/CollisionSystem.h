@@ -6,7 +6,6 @@
 #include "../Events/CollisionEvent.h"
 #include "../Components/BoxColliderComponent.h"
 #include "../Components/TransformComponent.h"
-#include "../Logger/Logger.h"
 
 class CollisionSystem : public System
 {
